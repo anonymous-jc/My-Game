@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NG/NANG QUIZ</title>
+    <link rel="stylesheet" href="css/game1.css">
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+      body{
+   	height: 100vh;
+  	background-image:url("img/bg1.jpg");
+  	background-size:400px;
+    </style>
+</head>
+<body>
+  <div id="app"></div>
+      <source src="Quiz.mp3" type="audio/mpeg"
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>PLAY</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Clarification</span></div>
+        <div class="info-list">
+            <div class="info">Ang <span>“ng”</span> ay sumasagot rin sa tanong na ano at nino. Kagaya na lamang sa halimbawa na binigay, masasabi na “ito ang pagkain ng pusa” sa tanong na Ano ito? o Pagkain nino ito?</div>
+            <div class="info">Habang ang salitang <span>“nang”</span> naman ay maaring gamitin sa paraan na paikliin ang salitang “na” at “ng”.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Back</button>
+            <button class="restart">Start</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Jc Quiz App</div>
+            <div class="timer">
+                <div class="timer_sec">15</div>
+            </div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text"></div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay</button>
+            <button class="quit">Quit</button></a>
+        </div>
+    </div>
+    <script src="js/game1.js"></script>
+     <script src="js/questions1.js">sound.js</script>
+    <embed src="Quiz.mp3" loop="true" hidden="true" autostart="true">
+    <h5>by John Carlo Buban</h5>
+    
+    </body>
+</html>
+</html>
